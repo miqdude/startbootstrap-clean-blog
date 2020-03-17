@@ -17,6 +17,10 @@ app.get('/post', function(req, res) {
   res.render('post');
 })
 
+app.get('/post/create', function(req, res){
+  res.render('create-post');
+})
+
 app.get('/', function(req, res){
   const posts = [
     {
